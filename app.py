@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-df = pd.read_csv("data\data.csv", encoding="ISO-8859-1", sep=";")
+df = pd.read_csv("data/data.csv", encoding="ISO-8859-1", sep=";")
 df.insert(2, "RealGoals", round(df['90s'] * df['Goals']))
 df.insert(3, 'RealShots', round(df['90s'] * df['Shots']))
 
